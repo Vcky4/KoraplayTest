@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:koraplay_test/color.dart';
+import 'package:koraplay_test/screens/Home.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnbardingPage extends StatefulWidget {
@@ -35,21 +36,21 @@ class _OnbardingPageState extends State<OnbardingPage> {
       );
 
   Widget _itemBuilder1(BuildContext context, int index) {
-    Color color;
+    String image;
     switch (index % 10) {
       case 2:
-        color = Colors.red;
+        image = 'asset/doctor.jpg';
         break;
       case 1:
-        color = Colors.blue;
+        image = 'asset/doctor2.jpg';
         break;
       default:
-        color = Colors.green;
+        image = 'asset/doctor.jpg';
     }
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('asset/doctor.jpg'), fit: BoxFit.cover)),
+              image: AssetImage(image), fit: BoxFit.cover)),
     );
   }
 
@@ -152,7 +153,7 @@ class _OnbardingPageState extends State<OnbardingPage> {
                 width: double.maxFinite,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Navigator.push(context, MaterialPageRoute(builder: (context) => const CreateAccount()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const Home()));
                   },
                   style: ElevatedButton.styleFrom(
                     primary: black,
