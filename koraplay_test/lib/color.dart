@@ -4,6 +4,7 @@ const primaryColor = Color(0xFF363cc0);
 const primaryColorVariant = Color(0xf363cc0);
 const black = Color(0xFF000000);
 const white = Color(0xFFe2eaf1);
+const whiteVariant = Color(0x5ffffff);
 
 MaterialColor createMaterialColor(Color color) {
   List strengths = <double>[.05];

@@ -36,6 +36,12 @@ dependencies:
   cupertino_icons: ^1.0.2
   #smooth_page_indicator:
   smooth_page_indicator: ^1.0.0
+  # flutter_tindercard:
+  flutter_tindercard: ^0.2.0
+#  Tcard
+  tcard: ^1.3.5
+#  stacked notifications card_swiper:
+  stacked_notification_cards: ^0.1.0-dev.2
 
 dev_dependencies:
   flutter_test:
